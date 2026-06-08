@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ansh Player</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>🎵 Ansh Player</h2>
+    <p>🏠 Home</p>
+    <p>🔍 Search</p>
+    <p>📚 Library</p>
+</div>
+
+<div class="main">
+    <img src="cover.jpg" class="cover">
+
+    <h1>Ansh Player</h1>
+
+    <audio id="song" src="song.mp3" controls></audio>
+    <button onclick="playSong()">▶ Play</button>
+    <button onclick="pauseSong()">⏸ Pause</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

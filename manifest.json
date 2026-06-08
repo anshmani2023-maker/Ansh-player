@@ -1,0 +1,15 @@
+{
+  "name": "Ansh Player",
+  "short_name": "Ansh",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1db954",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
