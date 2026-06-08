@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Ansh Player</title>
+
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="sidebar">
-    <h2>🎵 Ansh Player</h2>
-    <p>🏠 Home</p>
-    <p>🔍 Search</p>
-    <p>📚 Library</p>
-</div>
+    <div class="sidebar">
+        <h2>🎵 Ansh Player</h2>
 
-<div class="main">
-    <img src="cover.jpg" class="cover">
+        <p>🏠 Home</p>
+        <p>🔍 Search</p>
+        <p>📚 Library</p>
 
-    <h1>Ansh Player</h1>
+        <hr>
 
-    <audio id="song" src="song.mp3" controls></audio>
-    <button onclick="playSong()">▶ Play</button>
-    <button onclick="pauseSong()">⏸ Pause</button>
-</div>
+        <h3>Your Playlist</h3>
 
-<script src="script.js"></script>
+        <p>🎶 My Favorite Song</p>
+        <p>🎶 Chill Vibes</p>
+        <p>🎶 Night Music</p>
+    </div>
+
+    <div class="main">
+
+        <img src="cover.jpg" class="cover">
+
+        <h1 id="songTitle">Ansh Player</h1>
+
+        <audio id="song" src="song.mp3"></audio>
+
+        <div class="controls">
+            <button onclick="prevSong()">⏮</button>
+            <button onclick="playSong()">▶</button>
+            <button onclick="pauseSong()">⏸</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
+
+        <input type="range" id="progress" value="0">
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
