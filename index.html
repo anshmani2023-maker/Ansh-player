@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ansh Player</title>
 
     <link rel="manifest" href="manifest.json">
@@ -22,9 +23,9 @@
 
         <h3>Your Playlist</h3>
 
-        <p>🎶 My Favorite Song</p>
-        <p>🎶 Chill Vibes</p>
-        <p>🎶 Night Music</p>
+        <p onclick="playSpecificSong(0)">🎶 Kesariya</p>
+        <p onclick="playSpecificSong(1)">🎶 Tum Hi Ho</p>
+        <p onclick="playSpecificSong(2)">🎶 Galliyan Returns</p>
     </div>
 
     <div class="main">
@@ -33,7 +34,7 @@
 
         <h1 id="songTitle">Ansh Player</h1>
 
-        <audio id="song" src="song.mp3"></audio>
+        <audio id="song"></audio>
 
         <div class="controls">
             <button onclick="prevSong()">⏮</button>
@@ -43,6 +44,28 @@
         </div>
 
         <input type="range" id="progress" value="0">
+
+        <div class="time">
+            <span id="currentTime">0:00</span>
+            <span id="duration">0:00</span>
+        </div>
+
+        <input type="range" id="volume" min="0" max="100" value="100">
+
+    </div>
+
+    <div class="bottom-player">
+
+        <div class="bottom-song">
+            🎵 <span id="bottomTitle">Ansh Player</span>
+        </div>
+
+        <div>
+            <button onclick="prevSong()">⏮</button>
+            <button onclick="playSong()">▶</button>
+            <button onclick="pauseSong()">⏸</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
 
     </div>
 

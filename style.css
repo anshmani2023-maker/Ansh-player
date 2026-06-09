@@ -72,3 +72,32 @@ body{
 h1{
     margin-top:20px;
 }
+.time{
+    width:60%;
+    display:flex;
+    justify-content:space-between;
+    margin-top:10px;
+    font-size:18px;
+}
+
+#volume{
+    width:250px;
+    margin-top:20px;
+}
+.bottom-player{
+    position:fixed;
+    bottom:0;
+    left:250px;
+    right:0;
+    background:#181818;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top:1px solid #333;
+}
+
+.bottom-song{
+    font-size:18px;
+    color:#1cd15b;
+}
